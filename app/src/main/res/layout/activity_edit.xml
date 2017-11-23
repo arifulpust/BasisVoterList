@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:theme="@style/AppTheme2"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        app:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back"
+                    android:padding="20dp"
+                    android:id="@+id/back_button"
+                    android:rotation="180"
+                    android:background="@color/transparent"
+                    />
+
+                <TextView
+                    android:id="@+id/titleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Voter"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#f5f5f5"
+            app:cardElevation="0dp"
+            android:layout_margin="@dimen/padding_margin_10_dp"
+            app:cardCornerRadius="@dimen/padding_margin_5_dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company Name"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/company"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/text_field_corner_5dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:paddingLeft="15dp"
+                    android:hint="Dream71 Bangladesh Ltd."
+                    android:layout_marginTop="@dimen/padding_margin_5_dp"/>
+                <TextView
+                    android:layout_marginTop="@dimen/padding_margin_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MID "
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/text_field_corner_5dp"
+                    android:textSize="12sp"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:id="@+id/mid"
+                    android:hint="g11"
+
+
+                    android:layout_marginTop="@dimen/padding_margin_5_dp"/>
+                <TextView
+                    android:layout_marginTop="@dimen/padding_margin_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/text_field_corner_5dp"
+                    android:textSize="12sp"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:id="@+id/name"
+                    android:hint="Rashad Kabir"
+                    android:layout_marginTop="@dimen/padding_margin_5_dp"/>
+                <TextView
+                    android:layout_marginTop="@dimen/padding_margin_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Designation "
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/text_field_corner_5dp"
+                    android:textSize="12sp"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:id="@+id/designation"
+                    android:hint="MD of dream71"
+                    android:layout_marginTop="@dimen/padding_margin_5_dp"/>
+                <TextView
+                    android:layout_marginTop="@dimen/padding_margin_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address "
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/text_field_corner_5dp"
+                    android:textSize="12sp"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:id="@+id/address"
+                    android:hint="dhaka "
+                    android:layout_marginTop="@dimen/padding_margin_5_dp"/>
+                <TextView
+                    android:layout_marginTop="@dimen/padding_margin_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/text_field_corner_5dp"
+                    android:textSize="12sp"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:hint="mobile"
+                    android:id="@+id/mobile"
+                    android:inputType="phone"
+
+                    android:layout_marginTop="@dimen/padding_margin_5_dp"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/padding_margin_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Possibility"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color"/>
+                <Spinner
+                    android:id="@+id/possibilySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="@dimen/padding_margin_5_dp"
+                    android:layout_marginRight="@dimen/padding_margin_5_dp"
+                    android:textColor="@color/text_color"
+                    android:background="@drawable/spinner_item"
+                    >
+                </Spinner>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/text_field_corner_5dp"
+                    android:textSize="12sp"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:id="@+id/possibily"
+                    android:inputType="number"
+                    android:hint="50%"
+                    android:layout_marginTop="@dimen/padding_margin_5_dp"
+                />
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lay"
+
+                    android:theme="@style/AppTheme2"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    >
+                    <CheckBox
+                        android:layout_centerVertical="true"
+                        android:id="@+id/isVisited"
+                        android:background="#FFFFFF"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/padding_margin_10_dp"
+                        android:layout_width="0dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorAccent"
+                        android:drawableLeft="@android:color/transparent"
+                        android:drawablePadding="10dp"
+                        android:theme="@style/MyCheckBox"
+                        android:textColorHighlight="@color/colorPrimary"
+                        android:text="Visited"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        />
+
+
+                    <CheckBox
+                        android:layout_centerVertical="true"
+                        android:id="@+id/isCalled"
+                        android:background="#FFFFFF"
+                        android:layout_marginTop="@dimen/padding_margin_10_dp"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableLeft="@android:color/transparent"
+                        android:drawablePadding="10dp"
+                        android:theme="@style/MyCheckBox"
+                        android:text="Called"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/padding_margin_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Comment"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/text_field_corner_5dp"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp"
+                    android:hint="Comment"
+android:padding="5dp"
+android:gravity="left"
+                    android:id="@+id/comment"
+/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#557db8"
+            android:text="Save"
+            android:onClick="SaveVoter"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"/>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+</LinearLayout>

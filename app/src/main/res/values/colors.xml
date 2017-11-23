@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4e57a4</color>
+    <color name="textColorPrimary">#4e57a4</color>
+    <color name="colorPrimaryDark">#33396F</color>
+    <color name="colorAccent">#4B729E</color>
+    <color name="white">#FFFFFF</color>
+    <!--FMCG-->
+    <color name="text_color">#4a4a4a</color>
+    <color name="menuColor">#557db8</color>
+    <color name="transparent">#00000000</color>
+    <color name="login_holder_color">#50ffffff</color>
+    <color name="login_background_color">#4B729E</color>
+    <color name="login_button_color">#00A06B</color>
+    <color name="menu_even_color">#557db8</color>
+    <color name="menu_0dd_color">#50547cb8</color>
+</resources>
